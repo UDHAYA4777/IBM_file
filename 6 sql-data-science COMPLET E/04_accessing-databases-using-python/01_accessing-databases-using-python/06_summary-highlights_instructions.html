@@ -1,0 +1,120 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  Congratulations! You have completed this lesson. At this point in the course, you know:
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    You can access a database from a language like Python by using the appropriate API. Examples include ibm_db API for IBM DB2, psycopg2 for ProstgreSQL, and dblib API for SQL Server.
+   </p>
+  </li>
+  <li>
+   <p>
+    DB-API is Python's standard API for accessing relational databases. It allows you to write a single program that works with multiple kinds of relational databases instead of writing a separate program for each one.
+   </p>
+  </li>
+  <li>
+   <p>
+    The DB_API  connect constructor creates a connection to the database and returns a Connection Object, which is then used by the various connection methods.
+   </p>
+  </li>
+  <li>
+   <p>
+    The connection methods are:
+The
+    <var>
+     cursor()
+    </var>
+    method, which returns a new cursor object using the connection.
+The
+    <var>
+     commit()
+    </var>
+    method, which is used to commit any pending transaction to the database.
+The
+    <var>
+     rollback()
+    </var>
+    method, which causes the database to roll-back to the start of any pending transaction.
+The
+    <var>
+     close()
+    </var>
+    method, which is used to close a database connection.
+   </p>
+  </li>
+  <li>
+   <p>
+    You can use
+    <strong>
+     SQL Magic
+    </strong>
+    commands to execute queries more easily from Jupyter Notebooks. 
+Magic commands have the general format
+    <strong>
+     %sql select * from tablename
+    </strong>
+    .
+    <strong>
+     Cell magics
+    </strong>
+    start with a double %% (percent) sign and apply to the entire cell.
+    <strong>
+     Line magics
+    </strong>
+    start with a single % (percent) sign and apply to a particular line in a cell.
+   </p>
+  </li>
+ </ul>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
